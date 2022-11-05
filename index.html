@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Document</title>
 
 	<link rel="stylesheet" href="css/main.css">
-
-	<script src="libs/gsap/gsap.min.js" defer></script>
-	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-
 	<script src="js/app.js" defer></script>
 
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="content">
+	<div class="container">
+		<section class="gallery">
 
-			<header class="main-header">
-				<div class="layers">
-					<div class="layer__header">
-						<div class="layers__caption">Дом Быта</div>
-						<div class="layers__title">Услуги при Вас!</div>
-					</div>
-					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+			<div class="frame">
+				<div class="frame__content">
+					<h2>Дом Быта</h2>
 				</div>
-			</header>
-		
-			<article class="main-article" style="background-image: url(img/dungeon.png);">
-				<div class="main-article__content">
-					<h2 class="main-article__header">Наши услуги:</h2>
-					<p class="main-article__paragraph">Ремонт обуви</h2></p>
-					<p class="main-article__paragraph">Ремонт одежды</h2></p>
-					<p class="main-article__paragraph">Ремонт часов</h2></p>
-					<p class="main-article__paragraph">Ремонт ювелирных изделий</h2></p>
-				</div>
-				<div class="copy">© Андрюха на связи )</div>
-			</article>
+			</div>
 
-		</div>
+			<div class="frame">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(images/1.png)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media frame-media_right" style="background-image: url(images/2.png)"></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Изготовление ключей</h3>
+					<p>Высококласное оборудывание и доступ к заготовкам ключей от замков всего мира позволяет нам изготовить дубликат любого ключа</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media frame-media_left" src="media/key.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+			
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>Ремонт одежды</h3>
+					<p>Профессиональные швеи с более чем 10 летним стажем починят вашу одежду аккуратно и в срок. Трикотаж, куртки, платья - не пугают наших мастеров.</p>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(images/3.png)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			
+
+			<div class="frame">
+				<div class="frame__content">© Андрюха на связи</div>
+			</div>
+
+		</section>
 	</div>
+
+	<img class="soundbutton paused" src="images/sound.gif" alt="Alt">
+	<audio class="audio" src="media/ambient.mp3" loop></audio>
 
 </body>
 </html>
